@@ -1,6 +1,8 @@
 # Chess-Game
 Chess
 
+
+
 class Game(board: Board, WP, BP) {
   val Player1 = WP
   val Player2 = BP
