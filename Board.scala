@@ -2,7 +2,7 @@
 
 case class Board(grid: Array[Array(Piece)]){
   val ArrayBoard = grid
-  def move(Position:(Int,Int),NewPosition:(Int,Int)):Boolean{
+  def move(Position:(Int,Int),NewPosition:(Int,Int)):Boolean={
     // check if new position can be achieved from previos position
     //if yes return true
     //if no return false 
