@@ -20,7 +20,7 @@ object Game{
     val WP2 = new Player(WP, "White")
     val BP2 = new Player(BP, "Black")
     
-    val board = Board()
+    val board = Board(WP2,BP2)
     new Game(board, WP2, BP2)
     }
   }
