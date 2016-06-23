@@ -2,11 +2,11 @@
 
 
 abstract class Piece(val player:Player){
-  def allowedmoves;
+  def allowedMoves(Position:(Int,Int));
   }
   
 class p(player:Player) extends Piece(player){
-  def allowedmoves(Position:(Int,Int))={
+  def allowedMoves(Position:(Int,Int))={
     if (player.color == "W"){
       if (y>0){
         Array((x,y-1))
