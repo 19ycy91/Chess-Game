@@ -2,7 +2,7 @@
 
 
 abstract class Piece(val player:Player){
-  def allowedMoves(Position:(Int,Int));
+  def allowedMoves;
   }
   
 class p(player:Player) extends Piece(player){
