@@ -7,7 +7,7 @@ class Game(board: Board, WP, BP) {
   val Player1 = WP
   val Player2 = BP
   var Allboards = List(board)
-  def move(Position:(Int, Int), NewPosition:(Int,Int)): Board{
+  def move(Position:(Int, Int), NewPosition:(Int,Int)): Board={
     //return board
   }
 }
