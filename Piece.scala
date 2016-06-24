@@ -8,6 +8,7 @@ abstract class Piece(val player:Player) {
   def pathtaken(Position:(Int,Int),NewPosition:(Int,Int)):List[(Int,Int)]
 
 
+
 }
 
 //types
@@ -42,6 +43,7 @@ class p(player:Player) extends Piece(player){
     return PathTaken
   }
   }
+
 
 
 
