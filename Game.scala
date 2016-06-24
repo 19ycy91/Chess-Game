@@ -39,7 +39,5 @@ object Game{
     new Game(board, WP2, BP2)
 
   }
-  def main(): Unit ={
-    Game()
-  }
+
 }
