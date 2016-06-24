@@ -6,3 +6,6 @@ package Chess
 
 class Player(val Name:String, val Color:String) {
   var score = 0
+
+//Test
+
