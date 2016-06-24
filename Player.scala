@@ -1,5 +1,5 @@
 package Chess
-//pull request 
+///pull request 
 /**
   * Created by Richard Yoon on 6/22/2016.
   */
