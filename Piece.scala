@@ -1,6 +1,6 @@
 package Chess
 import scala.math._
-//pull request v1
+///pull request v1
 /**
   * Created by Richard Yoon on 6/22/2016.
   */
