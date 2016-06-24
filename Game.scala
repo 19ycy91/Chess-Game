@@ -8,11 +8,13 @@ package Chess
 class Game(board: Board, WP:Player, BP:Player) {
   val Player1 = WP
   val Player2 = BP
+  var GameOver = false
+  var movemade = true
   var Allboards:List[Board]=List(board)
   //Allboards::=board
   //add game over note
 
-  def move(Position: (Int, Int), NewPosition: (Int, Int)): Board = {
+  def move(Position: (Int, Int), NewPosition: (Int, Int)): Boolean = {
     var Current_board = Allboards(0)
     if (Current_board.move(Position,NewPosition)) {
 
@@ -22,10 +24,28 @@ class Game(board: Board, WP:Player, BP:Player) {
       val NewBoard:Board = Current_board.copy(grid = UpdatedArrayBoard)
 
       Allboards::=NewBoard
+      movemade = true
       //NewBoard }
     }
-    Allboards(0)
-}}
+    else {
+      movemade = false
+    }
+    return movemade
+
+
+}
+  def play(): Unit ={
+    /*while (GameOver!=true){
+      (var Pold, var Pnew) = scala.io.StdIn.readLine("White Player - Insert from Coordinate (x,y)")
+      (var Pold1, var Pnew1) = scala.io.StdIn.readLine("White Player - Insert new Coordinate (x,y)")
+      while ((Allboards(0).ArrayBoard(Pold)(Pnew)).player.Color != "White"){
+        (var Pold, var Pnew) = scala.io.StdIn.readLine("White Player - that is not your piece pick new piece Insert from Coordinate (x,y)")
+      }
+
+    }*/
+  }
+
+}
 
 object Game{
   def apply(): Game ={
@@ -41,3 +61,7 @@ object Game{
   }
 
 }
+
+
+
+
